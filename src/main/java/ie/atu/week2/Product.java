@@ -55,6 +55,12 @@ public class Product {
     for(int i = 0; i < product1.length; i++){
         writer.printf("Product 1: %s, product 2: %s, Product 3: %s%n"), product1[i], product2[i] and product3[i]);
     }
+        }catch(IOExeption e){
+    System.out.println("Error saving to file: " + egetMassage());
         }
+    }
+
+    private static String egetMassage() {
+        return 0;
     }
 }
