@@ -51,9 +51,7 @@ public class Product {
         }
     }
     private static void SaveToFile(String[] product1, String[] product2, String[] product3) {
-        try(PrintWriter writer = new PrintWriter FileWriter(FILE_NAME))){
-    for(int i = 0; i < product1.length; i++){
-        writer.printf("Product 1: %s, product 2: %s, Product 3: %s%n"), product1[i], product2[i], product3[i];
+        try(PrintWriter writer = new PrintWriter (FileWriter(FILE_NAME))){
     }
         }catch(IOExeption e){
     System.out.println("Error saving to file: " + egetMassage());
