@@ -26,6 +26,11 @@ public class Product {
             System.out.printf("Enter product 3 name: %d: ", i + 1);
             product3[i] = input.next().trim();
         }
+
+        System.out.println("Product List: ");
+        for (int i = 0; i < numProducts; i++) {
+            System.out.printf("Product 1: %s, Product 2: %s, Product 3: %s%n", product1[i], product2[i], product3[i]);
+        }
     }
     private static int getValidInt(Scanner input) {
         return 0;
