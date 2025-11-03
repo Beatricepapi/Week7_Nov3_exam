@@ -11,8 +11,22 @@ public class Product {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter product name: ");
         int numProducts = getValidInt(input);
-    }
 
+        String[] product1 = new String[numProducts];
+        String[] product2 = new String[numProducts];
+        String[] product3 = new String[numProducts];
+
+        for (int i = 0; i < numProducts; i++) {
+            System.out.printf("Enter product 1 name: %d: ", i + 1);
+            product1[i] = input.next().trim();
+
+            System.out.printf("Enter product 2 name: %d: ", i + 1);
+            product2[i] = input.next().trim();
+
+            System.out.printf("Enter product 3 name: %d: ", i + 1);
+            product3[i] = input.next().trim();
+        }
+    }
     private static int getValidInt(Scanner input) {
         return 0;
     }
